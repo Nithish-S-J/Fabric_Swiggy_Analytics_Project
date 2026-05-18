@@ -1,0 +1,98 @@
+# Dataset: Food Delivery Time Prediction Case Study.xlsx
+
+## Business Purpose
+This dataset represents operational delivery intelligence for food delivery services. It is primarily used for delivery SLA monitoring, rider performance analysis, operational efficiency tracking, and logistics optimization.
+
+---
+
+## Dataset Category
+Operational / Delivery Intelligence Dataset
+
+---
+
+## Key Business Entities
+- Delivery Partners
+- Delivery Operations
+- Restaurants
+- Delivery Locations
+- Vehicle Types
+
+---
+
+## Key Columns
+
+| Column Name | Description |
+|---|---|
+| ID | Unique delivery transaction identifier |
+| Delivery_person_ID | Unique delivery partner identifier |
+| Delivery_person_Age | Age of delivery partner |
+| Delivery_person_Ratings | Delivery partner performance rating |
+| Restaurant_latitude | Restaurant latitude coordinate |
+| Restaurant_longitude | Restaurant longitude coordinate |
+| Delivery_location_latitude | Customer delivery latitude |
+| Delivery_location_longitude | Customer delivery longitude |
+| Type_of_order | Order category |
+| Type_of_vehicle | Vehicle used for delivery |
+| Time_taken(min) | Total delivery duration |
+
+---
+
+## Potential KPIs
+- Average Delivery Time
+- Delivery SLA Compliance %
+- Delivery Partner Performance Rating
+- Orders by Vehicle Type
+- Fastest vs Slowest Delivery Zones
+- Average Delivery Time by Order Type
+- Rider Efficiency Metrics
+- Delivery Trend Analysis
+
+---
+
+## Business Use Cases
+- Delivery SLA monitoring
+- Rider performance analysis
+- Logistics optimization
+- Operational efficiency tracking
+- Delivery zone analysis
+- Vehicle utilization analytics
+- Peak delivery performance monitoring
+
+---
+
+## Expected Target Tables
+
+### Fact Tables
+- fact_deliveries
+
+### Dimension Tables
+- dim_delivery_partner
+- dim_location
+- dim_vehicle
+- dim_order_type
+- dim_restaurant
+
+---
+
+## Data Quality Observations
+- Validate missing delivery partner ratings
+- Check invalid latitude/longitude values
+- Validate delivery time consistency
+- Standardize vehicle type naming
+- Validate order type consistency
+- Check duplicate delivery IDs
+
+---
+
+## Transformation Requirements
+- Create SLA breach indicators
+- Standardize operational categories
+- Derive distance-based metrics
+- Create delivery performance bands
+- Generate time intelligence columns
+- Create operational KPI calculations
+
+---
+
+## Enterprise Analytics Value
+This dataset significantly enhances the project by enabling operational analytics capabilities beyond traditional sales reporting. It supports real-world delivery intelligence use cases commonly found in enterprise logistics and food delivery platforms.
