@@ -1,4 +1,5 @@
-CREATE TABLE dim_customers AS
+CREATE TABLE dim_customers
+AS
 
 SELECT
     customer_id,
@@ -9,11 +10,18 @@ SELECT
 
     AVG(service_rating) AS avg_service_rating,
 
+    COUNT(DISTINCT platform) AS platforms_used,
+
     CASE
-        WHEN COUNT(order_id) >= 20 THEN 'High Value'
-        WHEN COUNT(order_id) >= 10 THEN 'Regular'
+        WHEN COUNT(order_id) >= 15 THEN 'Frequent'
+        WHEN COUNT(order_id) >= 8 THEN 'Regular'
         ELSE 'Occasional'
-    END AS customer_segment
+    END AS customer_order_segment,
+
+    CASE
+        WHEN AVG(service_rating) >= 4 THEN 'Satisfied'
+        ELSE 'Needs Attention'
+    END AS customer_satisfaction_segment
 
 FROM silver_orders
 
