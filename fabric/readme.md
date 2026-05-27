@@ -13,3 +13,11 @@
 #warehouse_preview]
 
 ![datagenflow preview](https://github.com/Nithish-S-J/Swiggy-Enterprise-Analytics-Platform/blob/main/fabric/warehouse/warehouse_gold_views.png)
+
+#new_scemantic_modeling_preview
+
+![new_scemantic_model_preview](https://github.com/Nithish-S-J/Swiggy-Enterprise-Analytics-Platform/blob/main/fabric/scemantic_model/new_scemantic%20model.png)
+
+#scemantice_model_preview
+
+![scemantic_model_preview](https://github.com/Nithish-S-J/Swiggy-Enterprise-Analytics-Platform/blob/main/fabric/scemantic_model/scemantic_model.png)
